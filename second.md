@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자기소개 페이지</title>
-    <style>
-        body {background-color: ghostwhite;}
-        header {background-color: mintcream; padding: 10px;}
-    </style>
+<style>
+    header {background-color: lavender; padding: 10px;}
+</style>
 </head>
 <body>
 <!-- 소개 -->
@@ -53,3 +51,4 @@
 
 </body>
 </html>
+
