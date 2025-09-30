@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문지</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        div {
+            padding: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>설문지</h1><hr>
+    <div class="form">
+        <form name="fo" method="get">
+            <p>이름:<br><input type="text"></p>
+            <label>ID:<br><input type="text" id="id"></label><br>
+            <label for="pwd">PW:<br></label><input type="password" id="password">
+            <p>국적:<br><input type="text" list="country">
+                <datalist id="country">
+                    <option value="대한민국">
+                    <option value="미국">
+                    <option value="중국">
+                    <option value="일본">
+                    <option value="영국">
+                    <option value="프랑스">
+                    <option value="독일">
+                    <option value="캐나다">
+                    <option value="호주">
+                    <option value="뉴질랜드">
+                    <option value="기타">
+            </p>
+
+            <!-- 라디오버튼 -->
+            <p>혈액형:<br>
+                <input type="radio" name="b1" value="9">Rh+
+                <input type="radio" name="b1" id="8">Rh-<br>
+                <input type="radio" name="b2" value="1">A
+                <input type="radio" name="b2" value="2">B
+                <input type="radio" name="b2" value="3">O
+                <input type="radio" name="b2" value="4">AB
+            </p>
+
+            <p>자기소개:<br><textarea cols="20" rows="5" placeholder="작성하기"></textarea></p>
+
+            <!-- 버튼 -->
+            <p><input type="button" value="임시저장">
+                <input type="submit"><br>
+            </p>
+
+        </form>
+
+</body>
+
+</div>
+
+</html>
