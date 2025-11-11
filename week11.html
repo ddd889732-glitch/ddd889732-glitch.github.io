@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week11</title>
+    <script>
+        function adder(a, b) {
+            let sum;
+            sum = a + b;
+            return sum;
+        }
+
+        function showDialog() {
+            alert("안녕하세요?");
+        }
+    </script>
+</head>
+
+<body>
+    <h3>표를 이용한 구구단</h3>
+    <table>
+        <tr>
+            <td>단</td>
+        </tr>
+        <script>
+            let dan = prompt("구구단: ", 3);
+            dan = parseInt(dan);
+            for (i = 2; i <= 9; i++) {
+                document.write("<tr><td>" + dan + "</td><td>*" + "</td><td>" + i + "</td><td>=" + "</td><td>" + dan * i + "</td></tr>")
+            }
+        </script>
+    </table>
+
+    <script>
+        let n = adder(3, 5);
+        document.write(n);
+        showDialog();
+    </script>
+</body>
+
+</html>
