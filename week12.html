@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function checkID() {
+        let s = document.getElementById("idv").value;
+        if (s.length < 6)
+            alert("아이디는 6글자 이상이어야 합니다.");
+    }
+</script>
+
+<body>
+    <h1 id="alter">Change Colors</h1>
+    <hr>
+    <button onclick="change('red')">red</button>
+    <button onclick="change('blue')">blue</button>
+    <button onclick="change('yellow')">yellow</button>
+    <button onclick="change('green')">green</button>
+    <script>
+        function change(colors) {
+            const alter = document.getElementById('alter');
+            alter.style.color = colors;
+        }
+    </script>
+
+    아이디: <input type="text" id="idv" size="10>" <button onclick="checkID()">검사</button>
+    <script>
+        function make(num) {
+            if (num >= 1 && num <= 3) {
+                document.write("<img src='..." + num + ".png'>");
+                return true;
+            } else return false;
+        }
+        const food = parseInt(prompt("햄버거=1, 피자=2, 감자튀김=3"));
+        const result = make(food);
+        if (result)
+            document.write("<hr>식사 맛있게 하세요.");
+        else
+            document.write("없는 음식을 주문하셨습니다.");
+    </script>
+</body>
+
+</html>
